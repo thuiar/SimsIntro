@@ -101,29 +101,40 @@ z-index: 1000;  -->
       <!--<div class="overlay1">-->
       <div class="container2"></div>
     </header>
-
+    <br />
     <!-- About -->
     <section id="VoxCeleb1">
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
             <h2 class="section-heading text-center">
-              CH-SIMS v2.0: Chinese Fine-grained Multi-label Sentiment Analysis
-              Dataset
+              CH-SIMS v2.0: A Fine-grained Multi-label Sentiment Analysis
+              Dataset in Chinese
             </h2>
             <h3 id="Overview">Overview</h3>
+            <br />
             <p>
-              The statistics of CH-SIMS v2.0 is shown in below figure.
-              Specifically, CH-SIMS v2.0 contains 4402 supervised instances,
-              denoted as CH-SIMS v2.0 (s), and 10161 unsupervised instances,
-              denoted as CH-SIMS v2.0 (u). For the supervised resources, the
-              CH-SIMS v2.0 (s) shares similar properties with the original
-              dataset. While, for the unsupervised resources, the CH-SIMS v2.0
-              (u) shows a much more diverse duration distribution simulating the
-              potential real-world scenarios. In addition, the textual modality
-              of the unsupervised instances is directly collected from the
-              corresponding transcript without being manually refined and thus
-              might contain noise.
+              <b>CH-SIMS v2.0</b>, a Fine-grained Multi-label Chinese Sentiment
+              Analysis Dataset, is an enhanced and extended version of
+              <a href="https://aclanthology.org/2020.acl-main.34a3.padf">
+                CH-SIMS
+              </a>
+              Dataset. We re-labeled all instances in CH-SIMS to a finer
+              granularity and the video clips as well as pre-extracted features
+              are remade. We also extended the number of instances to a total of
+              14563. The new dataset contains videos collected from much wider
+              scenarios, as shown in the banner image.
+            </p>
+            <p>
+              As shown in below figure, CH-SIMS v2.0 contains
+              <b>4402 supervised instances</b>, denoted as CH-SIMS v2.0 (s), and
+              <b>10161 unsupervised instances</b>, denoted as CH-SIMS v2.0 (u).
+              The supervised instances share similar properties with CH-SIMS
+              dataset. The unsupervised instances show a much more diverse
+              distribution of video duration, which better simulates real-world
+              scenarios. The textual features of the unsupervised instances are
+              collected from the ASR transcript without manual correction and
+              thus contain noise, which also fits real-world scenarios better.
             </p>
             <div id="pic">
               <img
@@ -134,22 +145,17 @@ z-index: 1000;  -->
               />
             </div>
             <p>
-              The
-              <a href="https://github.com/thuiar/CH-SIMS-v2.0"
-                >CH-SIMS v2.0: Chinese Fine-grained Multi-label Sentiment
-                Analysis Dataset</a
-              >
-              (CH-SIMS v2.0) dataset is an enhanced and extended version of
-              <a href="https://aclanthology.org/2020.acl-main.34a3.padf"
-                >CH-SIMS</a
-              >. The baseline experiments are conducted using the
-              <a href="https://github.com/thuiar/MMSA">MMSA</a> platform.
+              We split train, valid and test set to a proportion of roughly
+              <b>9:2:3</b>. The regression labels range from -3 to 3. The
+              classification labels are: Negative(NEG), Weakly Negative(WNEG),
+              Neutral(NEU), Weakly Positive(WPOS), Positive(POS). The label
+              distribution is shown in below figure. The test set and the train
+              set are speaker-unrelated.
             </p>
             <p>
-              In addition, we split train, valid and test set close to 9:2:3.
-              NEG: Negative, WNEG: Weakly Negative, NEU: Neutral, WPOS: Weakly
-              Positive, POS: Positive. We guarantee that the test set and the
-              train set are speaker-unrelated.
+              The baseline experiments are conducted using the
+              <a href="https://github.com/thuiar/MMSA">MMSA</a> platform. The
+              results are reported <a href="">here</a> on Github.
             </p>
             <div id="pic">
               <img
@@ -169,98 +175,48 @@ z-index: 1000;  -->
           <div class="col-lg-12">
             <h3 id="down">Download</h3>
             <br />
-
-            <h5>Raw video files</h5>
-            We provide the raw CH-SIMS v2.0 videos, which is divided into
-            (Supervised data & Meta file) and (Unsupervised data & Neta file).
-            They are segmented according to each instance. The video clip id is
-            related to manual text information and modality annotations, which
-            is saved in the meta files.
+            We provide raw video files as well as pre-extracted feature files.
+            Video IDs, splits and labels are inside the csv file.
             <table border="0">
               <tr>
-                <td><b>File</b></td>
-                <td><tt>Download</tt></td>
+                <td><b>Dataset</b></td>
+                <td><b>Link</b></td>
               </tr>
               <tr>
-                <td>ch-simsv2s.zip</td>
+                <td>CH-SIMS</td>
                 <td>
-                  <tt
-                    ><a
-                      href="https://drive.google.com/drive/folders/1wFvGS0ebKRvT3q6Xolot-sDtCNfz7HRA?usp=sharing"
-                      >[Google Drive]</a
-                    ></tt
+                  <a
+                    href="https://drive.google.com/drive/folders/1oplJ15kdS_OK0wHXycI8p77jnmwAHhbG?usp=sharing"
                   >
+                    [Google Drive]
+                  </a>
+                  <a
+                    href="https://pan.baidu.com/s/1RfGj1QC7DN0PI31rQNxEqw?pwd=kevp"
+                  >
+                    [Baiduyun Drive]
+                  </a>
                 </td>
               </tr>
               <tr>
-                <td>ch-simsv2s.zip</td>
+                <td>CH-SIMS v2.0 (s)</td>
                 <td>
-                  <tt
-                    ><a
-                      href="https://drive.google.com/drive/folders/1wFvGS0ebKRvT3q6Xolot-sDtCNfz7HRA?usp=sharing"
-                      >[Google Drive]</a
-                    ></tt
+                  <a
+                    href="https://drive.google.com/drive/folders/1wFvGS0ebKRvT3q6Xolot-sDtCNfz7HRA?usp=sharing"
                   >
-                </td>
-              </tr>
-            </table>
-            <h5>Standard fetature files</h5>
-            We provide a processed feature file of CH-SIMS v2.0 for researchers
-            to use directly.
-            <table border="0">
-              <tr>
-                <td><b>File</b></td>
-                <td><tt>Download</tt></td>
-              </tr>
-              <tr>
-                <td>ch-simsv2s.pkl</td>
-                <td>
-                  <tt
-                    ><a
-                      href="https://drive.google.com/drive/folders/1wFvGS0ebKRvT3q6Xolot-sDtCNfz7HRA?usp=sharing"
-                      >[Google Drive]</a
-                    ></tt
-                  >
+                    [Google Drive]
+                  </a>
+                  <a href=""> [Baiduyun Drive] </a>
                 </td>
               </tr>
               <tr>
-                <td>ch-simsv2u.pkl</td>
+                <td>CH-SIMS v2.0 (u)</td>
                 <td>
-                  <tt
-                    ><a
-                      href="https://drive.google.com/drive/folders/1llIbm3gwyJRwwk58RUQHWBNKjHI9vGGB?usp=sharing"
-                      >[Google Drive]</a
-                    ></tt
+                  <a
+                    href="https://drive.google.com/drive/folders/1wFvGS0ebKRvT3q6Xolot-sDtCNfz7HRA?usp=sharing"
                   >
-                </td>
-              </tr>
-            </table>
-            Moreover, if you want to see the first version of CH-SIMS data, you
-            can download it below.
-            <table border="0">
-              <tr>
-                <td><b>File</b></td>
-                <td><tt>Download 1</tt></td>
-                <td><tt>Download 2</tt></td>
-              </tr>
-              <tr>
-                <td>ch-sims</td>
-                <td>
-                  <tt
-                    ><a
-                      href="https://drive.google.com/drive/folders/1oplJ15kdS_OK0wHXycI8p77jnmwAHhbG?usp=sharing"
-                      >[Google Drive]</a
-                    ></tt
-                  >
-                </td>
-                <td>
-                  <tt
-                    ><a
-                      href="https://pan.baidu.com/s/1oksuDEkkd3vGg2oBMBxiVw#list/path=%2Fsharelink3327208413-890795733690462%2FMMSA%2FDatasets%2FSIMS&parentPath=%2Fsharelink3327208413-890795733690462"
-                      >[Baidu Drive]</a
-                    >
-                    code:ctgs</tt
-                  >
+                    [Google Drive]
+                  </a>
+                  <a href=""> [Baiduyun Drive] </a>
                 </td>
               </tr>
             </table>
@@ -297,19 +253,19 @@ z-index: 1000;  -->
                 | <a href="https://arxiv.org/pdf/2209.02604.pdf"> PDF </a>
               </div>
               <div
-                style="display: none;"
+                style="display: block;"
                 class="BibtexExpand"
                 id="BIBAfouras18d"
               >
                 <pre class="bibtex">
-                  @misc{liu2022make,
-                    title={Make Acoustic and Visual Cues Matter: CH-SIMS v2.0 Dataset and AV-Mixup Consistent Module}, 
-                    author={Yihe Liu and Ziqi Yuan and Huisheng Mao and Zhiyun Liang and Wanqiuyue Yang and Yuanzhe Qiu and Tie Cheng and Xiaoteng Li and Hua Xu and Kai Gao},
-                    year={2022},
-                    eprint={2209.02604},
-                    archivePrefix={arXiv},
-                    primaryClass={cs.MM}
-                  }
+  @misc{liu2022make,
+    title={Make Acoustic and Visual Cues Matter: CH-SIMS v2.0 Dataset and AV-Mixup Consistent Module}, 
+    author={Yihe Liu and Ziqi Yuan and Huisheng Mao and Zhiyun Liang and Wanqiuyue Yang and Yuanzhe Qiu and Tie Cheng and Xiaoteng Li and Hua Xu and Kai Gao},
+    year={2022},
+    eprint={2209.02604},
+    archivePrefix={arXiv},
+    primaryClass={cs.MM}
+  }
                 </pre>
               </div>
             </div>
