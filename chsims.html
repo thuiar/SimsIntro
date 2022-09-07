@@ -1,58 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>CH-SIMS v2.0: Chinese Fine-grained Multi-label Sentiment Analysis Dataset</title>
+    <title>
+      CH-SIMS v2.0: Chinese Fine-grained Multi-label Sentiment Analysis Dataset
+    </title>
 
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 
     <!-- Custom fonts for this template -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">d
-    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link
+      href="vendor/font-awesome/css/font-awesome.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    d
+    <link
+      href="https://fonts.googleapis.com/css?family=Kaushan+Script"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700"
+      rel="stylesheet"
+      type="text/css"
+    />
 
     <!-- Custom styles for this template -->
-    <link href="css/agency_lrs3.css" rel="stylesheet">
+    <link href="css/agency_lrs3.css" rel="stylesheet" />
 
     <style>
-    table {border: 0; }
-    th, td { padding: 3px; }
+      table {border: 0; }
+      th, td { padding: 3px; }
     </style>
-
   </head>
 
   <body id="page-top">
-
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
         <!--<a class="navbar-brand js-scroll-trigger" href="#page-top">VoxCeleb</a>-->
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <button
+          class="navbar-toggler navbar-toggler-right"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           Menu
           <i class="fa fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav text-uppercase ml-auto">
             <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="https://github.com/thuiar/CH-SIMS-v2.0">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#Overview">Overview</a>
+              <a class="nav-link js-scroll-trigger" href="#Overview"
+                >Overview</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#down">Download</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#pub">Publications</a>
+              <a class="nav-link js-scroll-trigger" href="#pub">Citation</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link js-scroll-trigger"
+                href="https://github.com/thuiar/CH-SIMS-v2.0"
+                >Github</a
+              >
             </li>
           </ul>
         </div>
@@ -62,123 +98,225 @@
     <!-- Header background-color: rgba(0, 0, 0, .8);
 z-index: 1000;  -->
     <header class="masthead">
-    <!--<div class="overlay1">-->
-      <div class="container2">
-  </div>
+      <!--<div class="overlay1">-->
+      <div class="container2"></div>
     </header>
-
 
     <!-- About -->
     <section id="VoxCeleb1">
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
-            <h2 class="section-heading text-center">CH-SIMS v2.0: Chinese Fine-grained Multi-label Sentiment Analysis Dataset</h2>
-
-<br>
-
-<h3 id="Overview" >Overview</h3>
-<p>
-    The final statistics of the CH-SIMS v2.0 is shown in below figure. 
-    Specifically, the CH-SIMS v2.0 contains 4402 supervised instances, denoted as CH-SIMS v2.0 (s), and 10161 unsupervised instances, denoted as CH-SIMS v2.0 (u). 
-    For the supervised resources, the CH-SIMS v2.0 (s) shares similar properties with the original dataset. While, for the unsupervised resources, the CH-SIMS v2.0 (u) shows a much more diverse duration distribution simulating the potential real-world scenarios. In addition, the textual modality of the unsupervised instances is directly collected from the corresponding transcript without being manually refined and thus might contain noise.
-<div id="pic">
-    <img src="./img/Total.png" alt="five" width="900" class="total information">
-</div>
-</p>
-<p>The <a href="https://github.com/thuiar/CH-SIMS-v2.0">CH-SIMS v2.0: Chinese Fine-grained Multi-label Sentiment Analysis Dataset</a>
-     (CH-SIMS v2.0) dataset is an enhancement and extension version of <a href="https://aclanthology.org/2020.acl-main.34a3.padf">CH-SIMS</a>, the compared Baseline model relied on the <a href="https://github.com/thuiar/MMSA">MMSA</a> platform.</p>
-     In addition, we split train, valid and test set close to 9:2:3. NEG: Negative, WNEG: Weakly Negative, NEU: Neutral, WPOS: Weakly Positive, POS: Positive. We guarantee that the test set and the train set are speaker-unrelated. 
-
-<br></br>
-
-<div id="pic">
-    <img src="./img/datasplit.png" alt="five" width="350" class="data split">
-</div>
-
-</div>
-</section>
-<section>
-
-  <div class="container">
-   <div class="row">
-    <div class="col-lg-12">
-
-<h3 id="down">Downloads</h3><br>
-
-<h5>Raw video files</h5>
-We provide the raw CH-SIMS v2.0 videos, which is divided into (Supervised data & Meta file) and (Unsupervised data & Neta file). They are segmented according to each instance.
-The video clip id is related to manual text information and modality annotations, which is saved in the meta files.
-<table border=0><tr>
-<td><b>File</b></td><td> <tt>Download</tt></td></tr>
-<tr><td>ch-simsv2s.zip </td><td><tt><a href="https://drive.google.com/drive/folders/1wFvGS0ebKRvT3q6Xolot-sDtCNfz7HRA?usp=sharing">[Google Drive]</a></tt></td></tr>
-<tr><td>ch-simsv2s.zip </td><td><tt><a href="https://drive.google.com/drive/folders/1wFvGS0ebKRvT3q6Xolot-sDtCNfz7HRA?usp=sharing">[Google Drive]</a></tt></td></tr>
-</table>
-
-<br><br>
-
-<h5>Standard fetature files</h5>
-We provide a processed feature file of CH-SIMS v2.0 for researchers to use directly. 
-<table border=0><tr>
-<td><b>File</b></td><td> <tt>Download</tt></td></tr>
-<tr><td>ch-simsv2s.pkl </td><td><tt><a href="https://drive.google.com/drive/folders/1wFvGS0ebKRvT3q6Xolot-sDtCNfz7HRA?usp=sharing">[Google Drive]</a></tt></td></tr>
-<tr><td>ch-simsv2u.pkl </td><td><tt><a href="https://drive.google.com/drive/folders/1llIbm3gwyJRwwk58RUQHWBNKjHI9vGGB?usp=sharing">[Google Drive]</a></tt></td></tr>
-</table>
-Moreover, if you want to see the first version of CH-SIMS data, you can download it below.
-<table border=0><tr>
-<td><b>File</b></td><td> <tt>Download 1</tt></td> <td> <tt>Download 2</tt></td> </tr>
-<tr><td>ch-sims </td><td><tt><a href="https://drive.google.com/drive/folders/1oplJ15kdS_OK0wHXycI8p77jnmwAHhbG?usp=sharing">[Google Drive]</a></tt></td> <td><tt><a href="https://pan.baidu.com/s/1oksuDEkkd3vGg2oBMBxiVw#list/path=%2Fsharelink3327208413-890795733690462%2FMMSA%2FDatasets%2FSIMS&parentPath=%2Fsharelink3327208413-890795733690462">[Baidu Drive]</a> code:ctgs</tt></td></tr>
-
-
-</table>
-</section>
-<section>
-  <div class="container">
-   <div class="row">
-    <div class="col-lg-12">
-            
-
-<h3 id ='pub'>Publications</h3><br>
-<p class="section-subheading text-muted">Please cite the following if you make use of the dataset.</p>
-<div class="ref">
-  <div class="authors">[1]
-   Yihe. Liu,
-   Ziqi Yuan,
-   Huisheng Mao,
-   Zhiyun Liang,
-   Wanqiuyue Yang,
-   Yuanzhe Qiu,
-   Tie Cheng,
-   Xiaoteng Li,
-   Hua Xu, 
-   Kai Gao
-   
-  </div>
-   <div class='title'>
-   <a href="">
-    Make Acoustic and Visual Cues Matter: CH-SIMS v2.0 Dataset and AV-Mixup Consistent Module
-   </a> &nbsp; 
-  </div>
-  <div class='conf'>
-   arXiv preprint arXiv:
-  </div>
-  <div class='links'>
-     <a onclick='if (document.getElementById("BIBAfouras18d").style.display=="none") document.getElementById("BIBAfouras18d").style.display="block"; else document.getElementById("BIBAfouras18d").style.display="none";'> Bibtex </a> |  <a href=""> PDF </a>  </div>
-  <div style="display: none;" class='BibtexExpand' id='BIBAfouras18d'>
-   <pre class='bibtex'>
-</pre>
-
-  </div>
- </div>
- <br>
-
-
-
+            <h2 class="section-heading text-center">
+              CH-SIMS v2.0: Chinese Fine-grained Multi-label Sentiment Analysis
+              Dataset
+            </h2>
+            <h3 id="Overview">Overview</h3>
+            <p>
+              The statistics of CH-SIMS v2.0 is shown in below figure.
+              Specifically, CH-SIMS v2.0 contains 4402 supervised instances,
+              denoted as CH-SIMS v2.0 (s), and 10161 unsupervised instances,
+              denoted as CH-SIMS v2.0 (u). For the supervised resources, the
+              CH-SIMS v2.0 (s) shares similar properties with the original
+              dataset. While, for the unsupervised resources, the CH-SIMS v2.0
+              (u) shows a much more diverse duration distribution simulating the
+              potential real-world scenarios. In addition, the textual modality
+              of the unsupervised instances is directly collected from the
+              corresponding transcript without being manually refined and thus
+              might contain noise.
+            </p>
+            <div id="pic">
+              <img
+                src="./img/Total.png"
+                alt="Statistics"
+                width="900"
+                class="total information"
+              />
+            </div>
+            <p>
+              The
+              <a href="https://github.com/thuiar/CH-SIMS-v2.0"
+                >CH-SIMS v2.0: Chinese Fine-grained Multi-label Sentiment
+                Analysis Dataset</a
+              >
+              (CH-SIMS v2.0) dataset is an enhanced and extended version of
+              <a href="https://aclanthology.org/2020.acl-main.34a3.padf"
+                >CH-SIMS</a
+              >. The baseline experiments are conducted using the
+              <a href="https://github.com/thuiar/MMSA">MMSA</a> platform.
+            </p>
+            <p>
+              In addition, we split train, valid and test set close to 9:2:3.
+              NEG: Negative, WNEG: Weakly Negative, NEU: Neutral, WPOS: Weakly
+              Positive, POS: Positive. We guarantee that the test set and the
+              train set are speaker-unrelated.
+            </p>
+            <div id="pic">
+              <img
+                src="./img/datasplit.png"
+                alt="Data Split"
+                width="350"
+                class="data split"
+              />
+            </div>
+          </div>
         </div>
-
       </div>
-    </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h3 id="down">Download</h3>
+            <br />
 
+            <h5>Raw video files</h5>
+            We provide the raw CH-SIMS v2.0 videos, which is divided into
+            (Supervised data & Meta file) and (Unsupervised data & Neta file).
+            They are segmented according to each instance. The video clip id is
+            related to manual text information and modality annotations, which
+            is saved in the meta files.
+            <table border="0">
+              <tr>
+                <td><b>File</b></td>
+                <td><tt>Download</tt></td>
+              </tr>
+              <tr>
+                <td>ch-simsv2s.zip</td>
+                <td>
+                  <tt
+                    ><a
+                      href="https://drive.google.com/drive/folders/1wFvGS0ebKRvT3q6Xolot-sDtCNfz7HRA?usp=sharing"
+                      >[Google Drive]</a
+                    ></tt
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>ch-simsv2s.zip</td>
+                <td>
+                  <tt
+                    ><a
+                      href="https://drive.google.com/drive/folders/1wFvGS0ebKRvT3q6Xolot-sDtCNfz7HRA?usp=sharing"
+                      >[Google Drive]</a
+                    ></tt
+                  >
+                </td>
+              </tr>
+            </table>
+            <h5>Standard fetature files</h5>
+            We provide a processed feature file of CH-SIMS v2.0 for researchers
+            to use directly.
+            <table border="0">
+              <tr>
+                <td><b>File</b></td>
+                <td><tt>Download</tt></td>
+              </tr>
+              <tr>
+                <td>ch-simsv2s.pkl</td>
+                <td>
+                  <tt
+                    ><a
+                      href="https://drive.google.com/drive/folders/1wFvGS0ebKRvT3q6Xolot-sDtCNfz7HRA?usp=sharing"
+                      >[Google Drive]</a
+                    ></tt
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>ch-simsv2u.pkl</td>
+                <td>
+                  <tt
+                    ><a
+                      href="https://drive.google.com/drive/folders/1llIbm3gwyJRwwk58RUQHWBNKjHI9vGGB?usp=sharing"
+                      >[Google Drive]</a
+                    ></tt
+                  >
+                </td>
+              </tr>
+            </table>
+            Moreover, if you want to see the first version of CH-SIMS data, you
+            can download it below.
+            <table border="0">
+              <tr>
+                <td><b>File</b></td>
+                <td><tt>Download 1</tt></td>
+                <td><tt>Download 2</tt></td>
+              </tr>
+              <tr>
+                <td>ch-sims</td>
+                <td>
+                  <tt
+                    ><a
+                      href="https://drive.google.com/drive/folders/1oplJ15kdS_OK0wHXycI8p77jnmwAHhbG?usp=sharing"
+                      >[Google Drive]</a
+                    ></tt
+                  >
+                </td>
+                <td>
+                  <tt
+                    ><a
+                      href="https://pan.baidu.com/s/1oksuDEkkd3vGg2oBMBxiVw#list/path=%2Fsharelink3327208413-890795733690462%2FMMSA%2FDatasets%2FSIMS&parentPath=%2Fsharelink3327208413-890795733690462"
+                      >[Baidu Drive]</a
+                    >
+                    code:ctgs</tt
+                  >
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h3 id="pub">Citation</h3>
+            <br />
+            <p class="section-subheading text-muted">
+              Please cite us if you find our dataset useful.
+            </p>
+            <div class="ref">
+              <div class="authors">
+                [1] Yihe. Liu, Ziqi Yuan, Huisheng Mao, Zhiyun Liang, Wanqiuyue
+                Yang, Yuanzhe Qiu, Tie Cheng, Xiaoteng Li, Hua Xu, Kai Gao
+              </div>
+              <div class="title">
+                <a href="https://arxiv.org/abs/2209.02604">
+                  Make Acoustic and Visual Cues Matter: CH-SIMS v2.0 Dataset and
+                  AV-Mixup Consistent Module
+                </a>
+              </div>
+              <div class="links">
+                <a
+                  onclick='if (document.getElementById("BIBAfouras18d").style.display=="none") document.getElementById("BIBAfouras18d").style.display="block"; else document.getElementById("BIBAfouras18d").style.display="none";'
+                >
+                  Bibtex
+                </a>
+                | <a href="https://arxiv.org/pdf/2209.02604.pdf"> PDF </a>
+              </div>
+              <div
+                style="display: none;"
+                class="BibtexExpand"
+                id="BIBAfouras18d"
+              >
+                <pre class="bibtex">
+                  @misc{liu2022make,
+                    title={Make Acoustic and Visual Cues Matter: CH-SIMS v2.0 Dataset and AV-Mixup Consistent Module}, 
+                    author={Yihe Liu and Ziqi Yuan and Huisheng Mao and Zhiyun Liang and Wanqiuyue Yang and Yuanzhe Qiu and Tie Cheng and Xiaoteng Li and Hua Xu and Kai Gao},
+                    year={2022},
+                    eprint={2209.02604},
+                    archivePrefix={arXiv},
+                    primaryClass={cs.MM}
+                  }
+                </pre>
+              </div>
+            </div>
+            <br />
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Footer -->
@@ -186,39 +324,19 @@ Moreover, if you want to see the first version of CH-SIMS data, you can download
       <div class="container">
         <div class="row">
           <div class="col-md-4">
-            <span class="copyright">Copyright &copy; Visual Geometry Group. </span> 
+            <span class="copyright">Copyright &copy; THUIAR Group </span>
           </div>
-          <div class="col-md-4">
-<!--             <ul class="list-inline social-buttons">
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fa fa-twitter"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fa fa-facebook"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fa fa-linkedin"></i>
-                </a>
-              </li>
-            </ul> -->
-          </div>
+          <div class="col-md-4"></div>
           <div class="col-md-4">
             <ul class="list-inline quicklinks">
               <li class="list-inline-item">
-               <p>Design by <a href="">BootStrap </a></p>
+                <p>Design by <a href="">BootStrap </a></p>
               </li>
-        
             </ul>
           </div>
         </div>
       </div>
     </footer>
-
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
@@ -233,7 +351,5 @@ Moreover, if you want to see the first version of CH-SIMS data, you can download
 
     <!-- Custom scripts for this template -->
     <script src="js/agency.min.js"></script>
-
   </body>
-
 </html>
